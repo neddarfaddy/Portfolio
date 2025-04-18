@@ -1,0 +1,150 @@
+
+html {
+  background-color: #0f0a2f;   background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  
+
+html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-y: hidden; 
+
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+body {
+       
+            margin: 0;
+            min-height: 100%; 
+
+            padding-left: 1.3rem;
+            padding-right: 1.3rem;
+  }
+  .hero-intro {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.2s;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Fade-out on click */
+  .fade-out {
+    animation: fadeOut 0.5s ease-in forwards;
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  .hero-intro  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;    
+    text-align: center;
+    height: 100%; 
+    gap: 1.5rem;    
+    position: relative;
+
+
+  }
+
+
+  .hero-intro h1 {
+    font-family: "Fredoka", sans-serif;
+    color: #D9D9D9;
+font-weight: 400;
+font-size: 1.6rem; 
+  }
+
+  .hero-intro span {
+    color: #64FFDA;
+font-weight: 600;
+  }
+
+  .hero-intro button {
+background: none;    
+color: #D9D9D9;
+border-style: solid;
+cursor: pointer;
+border-color: #64FFDA;
+font-family: "Fredoka", sans-serif;
+font-size: 1.3rem;
+padding: 0.3rem 1.7rem; 
+animation: breathe 2s ease-in-out infinite;
+
+}
+
+
+
+@keyframes breathe {
+    0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(100, 255, 218, 0.5);
+    }
+    50% {
+      transform: scale(1.06);
+      box-shadow: 0 0 15px 2px rgba(100, 255, 218, 0.3);
+    }
+  } 
+
+
+
+
+
+  
+@media (min-width: 768px) {
+  .hero-intro h1 {
+font-family: "Fredoka", sans-serif;
+color: #D9D9D9;
+font-weight: 400;
+font-size: clamp(1rem, 2vw, 3rem);
+  }
+
+  .hero-intro span {
+    color: #64FFDA;
+font-weight: 500;
+  }
+
+
+
+  .hero-intro button {
+    font-size: clamp(1rem, 2vw, 2rem);
+
+
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

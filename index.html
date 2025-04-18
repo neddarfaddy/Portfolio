@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <main class="hero-intro">
+      
+        <h1>hey,   <span class="highlight">curious</span> mind. </h1>  
+        <a href="./index.html"><button>dive</button></a>
+
+    </main>
+    <script>
+        const button = document.querySelector("button");
+        const hero = document.querySelector(".hero-intro");
+      
+        button.addEventListener("click", function (e) {
+          e.preventDefault(); // prevent instant jump
+          hero.classList.add("fade-out");
+      
+          setTimeout(() => {
+            window.location.href = button.parentElement.getAttribute("href");
+          }, 500); // match fadeOut duration
+        });
+      </script>
+</body>
+</html>

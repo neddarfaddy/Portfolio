@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./portfolio.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+<link rel="icon" href="./imgs/website.png">
+<title>Shahin</title>
+</head>
+
+
+<body>
+
+
+<header>
+<a class="name" href="">Faddy Neddar</a>
+  <div class="icons">
+  <a class="github" href="https://github.com/neddarfaddy"><img src="./imgs/github.png" alt=""></a>
+  <a class="linkedin" href="https://www.linkedin.com/in/neddar-faddy-54369023b/
+  "><img src="./imgs/linkedin.png" alt=""></a>
+  <a class="mail-icon" href="mailto:neddarfaddy@gmail.com"><img src="./imgs/mail.png" alt=""></a>
+</div>
+</header>
+
+<!---------------- ------------- ------------- ------------- ------------- -------------HERO SECTION ------------- ------------- ------------- ------------- ------------- ---------- -->
+
+<section class="intro animate-on-scroll">
+      <h1>hi, <span>faddy</span> here.</h1>
+      <h2>I build things, design things, and break things until they work.</h2>
+      <p>I’m a creative developer from Algeria. I love bringing ideas to life through clean code, sharp design, and meaningful animations. 
+      Right now, I’m learning full-stack development with a focus on front-end, systems, and AI — aiming to build products that matter.</p>
+      <button>Say hi!</button> 
+</section>
+
+<!---------------- ------------- ------------- ------------- ------------- -------------HERO SECTION ------------- ------------- ------------- ------------- ------------- ---------- -->
+
+
+
+
+
+
+
+<!---------------- ------------- ------------- ------------- ------------- -------------ABOUT SECTION ------------- ------------- ------------- ------------- ------------- ---------- -->
+
+<section class="about animate-on-scroll">
+     <div class="left-about">
+      <h1>/ about me</h1>
+      <p>
+      I’m currently building my foundation as a <span>developer</span> and <span>designer</span> — blending <span>front-end</span> web development with <span>visual storytelling</span>. My goal is to go beyond typical websites and create <span>interactive</span>, <span>animated</span>, and intelligent products, from <span>beautiful UIs</span> to <span>full-scale systems</span> and <span>AI-powered tools</span>.<br> <br>
+      I’m also on a long-term mission to master <span>cloud infrastructure</span>, <span>backend systems</span>, and <span>machine learning</span> — aiming to work on <span>high-impact projects</span> that go beyond code. <br><br>
+      Here are some technologies I’ve been working with lately:</p>
+      <div class="skills-group">
+        <div class="skills">
+          <img src="./imgs/arrow.png" alt="">
+          <p>HTML / CSS</p>
+        </div>
+        <div class="skills">
+          <img src="./imgs/arrow.png" alt="">
+          <p>JavaScript (ES6+)</p>
+        </div>
+        <div class="skills">
+          <img src="./imgs/arrow.png" alt="">
+          <p>Learning React.js</p>
+        </div>
+        <div class="skills">
+          <img src="./imgs/arrow.png" alt="">
+          <p>Responsive Design</p>
+        </div>
+        <div class="skills">
+          <img src="./imgs/arrow.png" alt="">
+          <p>Learning Three.js</p>
+        </div>
+
+      </div></div>
+     <div class="right-about">
+      <img src="./imgs/Faddy.jpeg" alt="">
+     </div>
+
+  
+</section>
+
+<!--------------- ------------- ------------- ------------- ------------- -------------ABOUT SECTION ------------- ------------- ------------- ------------- ------------- ---------- -->
+
+    
+<section class="projects animate-on-scroll">
+  <h1>/ pet projects</h1>
+<div class="project-sections">
+  <div class="project-row">
+     
+   
+    <div class="project-row-icons">    
+
+      <img src="./imgs/website.png" alt="">
+     <a href=""><img src="./imgs/link.png" alt=""></a>  
+    
+    </div>
+
+    <h2>Ryujin Resort Website</h2>
+    <p>A luxury resort landing page built with clean HTML, CSS, and design precision. Responsive, elegant, and fully custom-coded. </p>
+    <p>HTML / JavaScript / CSS</p>
+ 
+ 
+ 
+  </div>
+
+
+ 
+
+</div>
+ 
+
+</section>
+
+
+<footer>
+  <p>Built and designed by Faddy Neddar. </p>
+  <p>All rights reserved. ©</p>
+</footer>
+<script>
+  const animatedSections = document.querySelectorAll('.animate-on-scroll');
+
+  const reveal = () => {
+    animatedSections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight - 100 && rect.bottom > 100;
+
+      if (isVisible) {
+        section.classList.add('in-view');
+      } else {
+        section.classList.remove('in-view');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', reveal);
+  window.addEventListener('load', reveal);
+</script>
+
+<!--------------- ------------- ------------- ------------- ------------- -------------EXERIENCES SECTION ------------- ------------- ------------- ------------- ------------- -------- -->
+
+
+
+
+</body>
+</html>
