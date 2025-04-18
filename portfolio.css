@@ -7,7 +7,25 @@ background-color: #0f0a2f;      background-attachment: fixed;
       height: 100%;
 }
  
+::-webkit-scrollbar {
+  width: 4rem;  
+  height: 18px;
+}
 
+::-webkit-scrollbar-track {
+  background: #0a192f; /* match your background */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #64ffda; /* bright accent */
+  border-radius: 10px;
+  border: 22px solid #0a192f; /* border for spacing */ 
+}
+
+/* Firefox (limited styling) */
+* {
+  scrollbar-color: #64ffda #0a192f;
+}
 html, body {
       margin: 0;
       padding: 0;
