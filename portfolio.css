@@ -420,12 +420,20 @@ footer p{
 
     /*---------------- ------------- ------------- ------------- ---------HEADER SECTION---- ------------- ------------- ------------- ------------- ------------- ------------- ---------- */
 
+.top {
+  background-color: #0f0a2f;  
+  height: 4rem;  
+width: 100%; 
+left: 50%; /* move starting point to middle of the screen */
+    transform: translateX(-50%);
+    position: fixed; 
+    z-index: 20000;
 
+}
   header {
   
-
-    max-width: 1000px;      
-    margin-inline: auto; 
+max-width: 1000px;    
+margin-inline: auto; 
 
     left: 50%; /* move starting point to middle of the screen */
     transform: translateX(-50%);
