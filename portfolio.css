@@ -371,7 +371,14 @@ width: 8%;
  .project-row-icons a img {
 width: 10%;
  }
- 
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -428,6 +435,7 @@ left: 50%; /* move starting point to middle of the screen */
     transform: translateX(-50%);
     position: fixed; 
     z-index: 20000;
+    animation: fadeIn 1s ease forwards;
 
 }
   header {
@@ -440,7 +448,14 @@ margin-inline: auto;
 
   }
 
-
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   .icons {
  
 
