@@ -1,4 +1,8 @@
 "use strict";
+window.addEventListener("load", function () {
+  document.body.style.display = "block";
+});
+
 const animatedSections = document.querySelectorAll(".animate-on-scroll");
 
 const reveal = () => {
