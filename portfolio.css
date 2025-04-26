@@ -542,116 +542,113 @@ footer p {
 
   /*---------------- ------------- ------------- ------------- ---------HEADER SECTION---- ------------- ------------- ------------- ------------- ------------- ------------- ---------- */
 
-  /*-
   .experience {
     max-width: 1000px;
     margin-inline: auto;
     padding-top: 10rem;
     margin-inline: auto;
-    padding-bottom: 7rem;
+    margin-bottom: 2rem;
+    height: 70vh;
   }
-  
+
   .experience-container {
     display: flex;
     gap: 3rem;
-  
+
     flex-direction: column;
   }
-  
+
   .experience-container-information {
     gap: 3rem;
     padding-top: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
-  
-  /* Mini container Settings 
+
   .experience-titles {
     display: flex;
     gap: 3rem;
     flex: 1;
-    padding-top: 2rem;
+    padding-top: 3rem;
     flex-direction: column;
   }
-  
+
   .experience-summary {
     flex: 3.5;
     display: flex;
-    flex-direction: column;
+    padding-top: 0;
   }
-  
+
   .job-points {
-    padding-left: 4rem;
+    padding-left: 2rem;
     padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
-  
-  /* Typography Settings
-  
+
   .experience h1 {
     font-weight: 600;
     font-size: clamp(3rem, 1.8vw, 5rem);
     color: #ccd6f6;
   }
-  
+
   .experience-titles button {
     font-weight: 600 !important;
     background-color: transparent;
-    color: #ccd6f6;
+    color: #8892b0;
     border: none;
     text-align: left;
     cursor: pointer;
     font-size: clamp(1rem, 0.8vw, 2rem);
     transition: all 0.7s ease-in-out;
   }
-  
+
   .experience-titles button:hover {
     color: #64ffda;
   }
-  
+
   .experience-container-header {
     font-size: clamp(1rem, 1vw, 5rem);
   }
-  
+
   .job-date {
     padding-top: 1rem;
-    font-size: clamp(0.5rem, 0.6vw, 3rem);
+    font-size: clamp(0.5rem, 0.8vw, 3rem) !important;
     padding-bottom: 2rem;
     color: #ccd6f6;
   }
-  
+
   .job-date span {
     color: #64ffda;
   }
-  
+
   .job-points li {
     color: #8892b0;
-    line-height: 1.5rem;
+    line-height: 2rem;
     font-size: clamp(1rem, 0.8vw, 5rem);
   }
-  
+
   .job-title {
     font-size: 200rem;
     color: #ccd6f6;
-  
+
     font-size: clamp(2rem, 0.8vw, 10rem) !important;
   }
-  
+
   .job-location {
     color: #64ffda;
   }
-  
+
   .veeva-experience {
     font-weight: 500 !important;
     color: #64ffda;
   }
-  
+
   .job-points li::marker {
-    color: #64ffda; /* or whatever color you want 
+    color: #64ffda;
   }
-  
+
   @keyframes fadeUp {
     0% {
       opacity: 0;
@@ -662,11 +659,10 @@ footer p {
       transform: translateY(0);
     }
   }
-  
+
   .fade-up {
     animation: fadeUp 0.7s ease-out forwards;
   }
-  */
 
   .top {
     background-color: #0f0a2f;
