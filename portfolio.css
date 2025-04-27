@@ -193,11 +193,18 @@ header img {
   background: none;
   color: #d9d9d9;
   border-style: solid;
+  text-decoration: none;
   border-radius: 30px;
   border-color: #64ffda;
   font-family: "Fredoka", sans-serif;
-  font-size: 1.1rem !important;
+  font-size: 1.2rem !important;
   padding: 0.6rem 1.7rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.intro button:hover {
+  transform: scale(1.2);
 }
 
 .intro p {

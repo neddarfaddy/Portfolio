@@ -1,7 +1,4 @@
 "use strict";
-window.addEventListener("load", function () {
-  document.body.style.display = "block";
-});
 
 const animatedSections = document.querySelectorAll(".animate-on-scroll");
 
@@ -71,4 +68,10 @@ veevaButton.addEventListener("click", function () {
 
 menutechButton.addEventListener("click", function () {
   openMenutechTab();
+});
+
+const contactBtn = document.getElementById("contact-btn");
+
+contactBtn.addEventListener("click", function () {
+  window.location.href = "mailto:neddarfaddy@gmail.com";
 });
