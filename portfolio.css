@@ -559,7 +559,8 @@ footer p {
   /*---------------- ------------- ------------- ------------- ---------HEADER SECTION---- ------------- ------------- ------------- ------------- ------------- ------------- ---------- */
 
   .experience {
-    max-width: 1200px;
+    width: clamp(300px, 55%, 1200px);
+
     margin-inline: auto;
     padding-top: 10rem;
     margin-inline: auto;
@@ -605,7 +606,7 @@ footer p {
 
   .experience h1 {
     font-weight: 600;
-    font-size: clamp(3rem, 1.8vw, 5rem);
+    font-size: clamp(3rem, 1.8vw, 3rem);
     color: #ccd6f6;
   }
 
@@ -618,7 +619,7 @@ footer p {
     align-items: center;
     text-align: left;
     cursor: pointer;
-    font-size: clamp(1rem, 0.8vw, 2rem);
+    font-size: clamp(1.1rem, 0.8vw, 1.3rem);
     transition: all 0.7s ease-in-out;
   }
 
@@ -648,7 +649,7 @@ footer p {
   .job-points li {
     color: #8892b0;
     line-height: 2rem;
-    font-size: clamp(1rem, 0.8vw, 5rem);
+    font-size: clamp(1.1rem, 0.8vw, 1.3rem);
   }
 
   .job-title {
@@ -693,7 +694,7 @@ footer p {
     animation: fadeIn 1s ease forwards;
   }
   header {
-    max-width: 1200px !important;
+    width: clamp(300px, 55%, 1200px) !important;
     margin-inline: auto;
     padding-left: 0rem;
     padding-right: 0rem;
@@ -740,7 +741,7 @@ footer p {
   /*---------------- ------------- ------------- ------------- ---------HERO SECTION---- ------------- ------------- ------------- ------------- ------------- ------------- ---------- */
 
   .intro {
-    max-width: 1200px;
+    width: clamp(300px, 55%, 1200px);
     margin-inline: auto;
   }
 
@@ -765,7 +766,7 @@ footer p {
   }
 
   .intro p {
-    font-size: clamp(1.3rem, 0.8vw, 3rem);
+    font-size: clamp(1.1rem, 0.8vw, 1.5rem);
     font-weight: 400;
     max-width: 70%;
   }
@@ -773,14 +774,14 @@ footer p {
   /*---------------- ------------- ------------- ------------- ------------- ------------- ------------- ------------- ------------- ------------- ------------- ---------- */
 
   .about {
-    max-width: 1200px;
+    width: clamp(300px, 55%, 1200px);
     margin-inline: auto;
     padding-top: 6rem;
     flex-direction: row;
   }
 
   .about h1 {
-    font-size: clamp(3rem, 1.8vw, 5rem);
+    font-size: clamp(3rem, 1.8vw, 3rem);
     font-weight: 500;
     padding-bottom: 3rem;
   }
@@ -810,7 +811,7 @@ footer p {
   }
 
   .about p {
-    font-size: clamp(1.1rem, 0.8vw, 3rem);
+    font-size: clamp(1.1rem, 0.8vw, 1.3rem);
     font-weight: 400;
   }
 
@@ -825,14 +826,14 @@ footer p {
 
   /*---------------- ------------- ------------- ------------- ------------- ------------- ------------- ------------- ------------- ------------- ------------- ---------- */
   .projects h1 {
-    font-size: clamp(3rem, 1.8vw, 5rem);
+    font-size: clamp(3rem, 1.8vw, 3rem);
     font-weight: 500;
     padding-bottom: 2rem;
   }
 
   .projects {
     padding-top: 10rem;
-    max-width: 1200px;
+    width: clamp(300px, 55%, 1200px);
     margin-inline: auto;
     justify-content: start;
   }
