@@ -350,7 +350,7 @@ header img {
   color: #ccd6f6;
 }
 .qwoted-experience {
-  font-weight: 500 !important;
+  font-weight: 500;
   color: #64ffda;
 }
 .experience-titles button.menutech-experience {
@@ -358,7 +358,7 @@ header img {
 }
 
 .experience-titles button {
-  font-weight: 500 !important;
+  font-weight: 500;
   background-color: transparent;
   text-transform: uppercase;
   color: #8892b0;
@@ -662,11 +662,6 @@ footer p {
     color: #64ffda;
   }
 
-  .veeva-experience {
-    font-weight: 500 !important;
-    color: #64ffda;
-  }
-
   .job-points li::marker {
     color: #64ffda;
   }
@@ -689,7 +684,8 @@ footer p {
   .top {
     background-color: #0f0a2f;
     height: 4rem;
-    width: 100%;
+    width: 95%;
+
     left: 50%; /* move starting point to middle of the screen */
     transform: translateX(-50%);
     position: fixed;
@@ -697,10 +693,10 @@ footer p {
     animation: fadeIn 1s ease forwards;
   }
   header {
-    max-width: 1200px;
+    max-width: 1200px !important;
     margin-inline: auto;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0rem;
+    padding-right: 0rem;
     left: 50%; /* move starting point to middle of the screen */
     transform: translateX(-50%);
   }

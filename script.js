@@ -40,7 +40,7 @@ const openTab = function (index) {
   buttons.forEach((button, i) => {
     if (index === i) {
       button.style.color = "#64ffda";
-      button.style.fontWeight = "500";
+      button.style.fontWeight = "600";
     } else {
       button.style.color = "#8892b0";
       button.style.fontWeight = "400";
