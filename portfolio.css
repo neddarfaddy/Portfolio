@@ -699,7 +699,8 @@ footer p {
   header {
     max-width: 1200px;
     margin-inline: auto;
-
+    padding-left: 0;
+    padding-right: 0;
     left: 50%; /* move starting point to middle of the screen */
     transform: translateX(-50%);
   }
