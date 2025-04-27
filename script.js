@@ -1,4 +1,7 @@
 "use strict";
+window.addEventListener("load", function () {
+  document.body.classList.add("loaded");
+});
 
 const animatedSections = document.querySelectorAll(".animate-on-scroll");
 
@@ -18,57 +21,40 @@ const reveal = () => {
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal);
 
-const veevaButton = document.querySelector(".veeva-experience"); // moved to an arrary called buttons
-const qwotedButton = document.querySelector(".qwoted-experience"); // moved to an arrary called buttons
-const menutechButton = document.querySelector(".menutech-experience"); // moved to an arrary called buttons
-const experienceSummary = document.querySelectorAll(".experience-summary"); // stayed as it
-const openQwotedTab = function () {
-  experienceSummary[0].classList.add("hidden");
-  experienceSummary[1].classList.remove("hidden");
-  experienceSummary[2].classList.add("hidden");
-  qwotedButton.style.color = "#64ffda";
-  veevaButton.style.color = "#8892b0";
-  menutechButton.style.color = "#8892b0";
-  qwotedButton.style.fontWeight = "500";
-  veevaButton.style.fontWeight = "400";
-  menutechButton.style.fontWeight = "400";
+const buttons = document.querySelectorAll(".title-experience-button");
+
+// Menutech = 0
+// Qwoted = 1
+// Veeva = 2
+
+const summaries = document.querySelectorAll(".experience-summary");
+
+const openTab = function (index) {
+  // hides and unhides the summary
+
+  summaries.forEach((summary, i) => {
+    summary.classList.toggle("hidden", index !== i);
+  });
+
+  //font weight
+  buttons.forEach((button, i) => {
+    if (index === i) {
+      button.style.color = "#64ffda";
+      button.style.fontWeight = "500";
+    } else {
+      button.style.color = "#8892b0";
+      button.style.fontWeight = "400";
+    }
+  });
 };
 
-const openVeevaTab = function () {
-  experienceSummary[0].classList.add("hidden");
-  experienceSummary[1].classList.add("hidden");
-  experienceSummary[2].classList.remove("hidden");
-  veevaButton.style.color = "#64ffda";
-  menutechButton.style.color = "#8892b0";
-  qwotedButton.style.color = "#8892b0";
-  qwotedButton.style.fontWeight = "400";
-  veevaButton.style.fontWeight = "500";
-  menutechButton.style.fontWeight = "400";
-};
-
-const openMenutechTab = function () {
-  experienceSummary[0].classList.remove("hidden");
-  experienceSummary[1].classList.add("hidden");
-  experienceSummary[2].classList.add("hidden");
-  veevaButton.style.color = "#8892b0";
-  menutechButton.style.color = "#64ffda";
-  qwotedButton.style.color = "#8892b0";
-  qwotedButton.style.fontWeight = "400";
-  veevaButton.style.fontWeight = "400";
-  menutechButton.style.fontWeight = "500";
-};
-
-qwotedButton.addEventListener("click", function () {
-  openQwotedTab();
+//
+buttons.forEach((button, index) => {
+  button.addEventListener("click", function () {
+    openTab(index);
+  });
 });
-
-veevaButton.addEventListener("click", function () {
-  openVeevaTab();
-});
-
-menutechButton.addEventListener("click", function () {
-  openMenutechTab();
-});
+//
 
 const contactBtn = document.getElementById("contact-btn");
 

@@ -50,6 +50,12 @@ body {
   min-height: 100%;
   padding-left: 1.3rem;
   padding-right: 1.3rem;
+  opacity: 0;
+  transition: opacity 2s ease-in;
+}
+
+body.loaded {
+  opacity: 1;
 }
 
 * {
@@ -289,15 +295,15 @@ header img {
 .experience {
   width: 95%;
 
-  margin-inline: auto;
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 5rem;
 }
 
 .experience-container {
   display: flex;
   gap: 3rem;
-
+  width: 100%;
   flex-direction: column;
 }
 
@@ -312,7 +318,6 @@ header img {
   display: flex;
   gap: 2rem;
   flex: 1;
-  padding-left: 1rem;
   flex-direction: column;
 }
 
@@ -320,20 +325,20 @@ header img {
   flex: 3.5;
   text-align: left !important;
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
   padding-top: 1.3rem;
   align-items: center;
   flex-direction: column;
+  padding-left: 0.8rem !important;
+  padding-right: 0.5rem;
 }
 
 .job-points {
   display: flex;
-  width: 95%;
-  padding-left: 0.5rem;
+  width: 100%;
+  padding-left: 3rem;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   gap: 1.5rem;
 }
 
@@ -389,6 +394,7 @@ header img {
   color: #8892b0;
   line-height: 1.5rem;
   font-size: clamp(1rem, 0.8vw, 5rem);
+  align-items: start;
 }
 
 .job-title {
@@ -604,14 +610,20 @@ footer p {
   }
 
   .experience-titles button {
-    font-weight: 600 !important;
     background-color: transparent;
     color: #8892b0;
     border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
     text-align: left;
     cursor: pointer;
     font-size: clamp(1rem, 0.8vw, 2rem);
     transition: all 0.7s ease-in-out;
+  }
+
+  .title-experience-button span {
+    font-size: 2rem !important;
   }
 
   .experience-titles button:hover {
