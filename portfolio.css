@@ -850,7 +850,7 @@ footer p {
 
   .project-sections {
     display: grid;
-    width: clamp(900px, 55%, 1200px);
+    width: clamp(900px, 100%, 1200px);
 
     grid-template-columns: 1fr 1fr 1fr !important;
     grid-template-rows: auto;
@@ -858,13 +858,10 @@ footer p {
   }
 }
 
-@media (min-width: 680px) {
-  /*---------------- ------------- ------------- ------------- ---------GLOBAL---- ------------- ------------- ------------- ------------- ------------- ------------- ---------
-
-  /*---------------- ------------- ------------- ------------- ---------HEADER SECTION---- ------------- ------------- ------------- ------------- ------------- ------------- ---------- */
-
+@media (min-width: 550px) {
   .project-sections {
     display: grid;
+    width: 100%;
 
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
